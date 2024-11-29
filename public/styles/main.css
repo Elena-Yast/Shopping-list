@@ -28,7 +28,7 @@ main {
 
     
     border-radius: 15px;
-    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3); */
     position: relative;
     text-align: center;
     overflow: hidden; 
@@ -45,7 +45,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
     z-index: 1;
 }
 .container * {
@@ -84,7 +84,19 @@ h1 {
 }
 .itemCheckbox:checked {
     background-color: #74f4ae;
-    border-color: #55d897;
+    border-color: #55d897; 
+} 
+.itemCheckbox:checked::after {
+    content: 'V';
+    font-size: 16px;
+    color: rgb(63, 4, 4);
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .bought {
@@ -175,13 +187,12 @@ h1 {
     margin-bottom: 50px;
     margin-top: 160px;
 }
+footer {
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
 
-
-
-
-
-
-
+}
 
 
 
